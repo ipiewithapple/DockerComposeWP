@@ -16,9 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 123
     volumes:
-      - ./databases:/var/lib/mysql
-    ports:
-      - "3306:3306"    
+      - ./databases:/var/lib/mysql    
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
